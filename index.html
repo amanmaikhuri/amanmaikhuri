@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calm Mind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body></body>
+    <header>
+        <div class="menu-icon" id="menuIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <span id="logo"> Calm Mind : Mood Logger</span>
+    </header>
+    <main>
+        <div class="menu-options" id="menuOptions">
+            <a href="#home" id="Home">Home</a>
+            <a href="#mood-logger" id="mood-logger">Mood Logger</a>
+            <a href="#breathing" id="breathing-tool">Breathing Excercise</a>
+            <a id="mindfulness-practice">Mindfulness</a>
+            <a id="daily-affirmation">Daily Affirmations</a>
+            <a id="explore">Understand More About Your Brain !</a>
+        </div>
+
+        <!--Affirmations -->
+        <section id="affirmations">
+            <h2>Daily Affirmation</h2>
+            <p id="affirmation"></p>
+        </section>  
+
+
+        <!--Moood Logger-->
+        <section class="moodLogger">
+            <label for="mood-options">
+                How are You Feeling ?
+            </label>
+            <select name="Mood" id="mood-options">
+                <option value="select">Select</option>
+                <option value="happy">Happy 😊</option>
+                <option value="sad">Sad 😔</option>
+                <option value="neutral">Neutral 😐</option>
+            </select>
+            <textarea name="text-box" id="text-box" placeholder="Refelect on Your Thoughts"></textarea>
+            <button id="submit-btn">Submit</button>
+            <button id="delete-btn">Remove Logs</button>
+            <div id="pastLogs">
+                <p id="past-logs">Mood Logs !
+                    <ul id="ul"></ul>
+                </p>   
+            </div>
+            <hr>
+        </section>
+
+            <!--Breathing Excercise-->
+
+
+            <section id="breathing">
+                <h2>Breathing Excercise</h2>
+                <p id="instruction">
+                    Click the button to begin a guided breathing session !
+                </p>
+                <div id="circle"></div>
+                <button id="startBreathing" class="breathingBtn">
+                    Start Breathing Excercise
+                </button>
+                <p id="timer"></p>
+            </section>
+
+
+        </div>
+        <script src="/index.js"></script>
+    </main>
+    <hr>
+    <footer>
+        Made with ❤️ for India 
+        <p>Created by limeLight💗</p>
+    </footer>
+</body>
+</html>

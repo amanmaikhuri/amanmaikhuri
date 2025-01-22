@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+    color: #333;
+    font-weight: bold;
+}
+
+/*  menuIcon */
+
+.menu-icon {
+    width: 1.6rem;
+    height: 1.26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    border: 2px solid #333;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+.menu-icon:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-icon span {
+    background-color: #333;
+    height: 3px;
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-shadow: 0 2px 4px #ccc;
+}
+
+/*Dropdown Menu container*/
+.menuOptions {
+    display: none;
+    background-color: #f0f8ff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.7rem 0;
+}
+
+.menu-options a{
+    display: block;
+    height: auto;
+    width: 40vw;
+    padding : 10px 20px ;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin: 1rem 3rem;
+    border-radius: 0.5rem;
+}
+
+.menu-options a:hover{
+    background-color: #eee;
+}
+
+/* header*/
+
+header{
+    height: 3rem;
+    width: auto;
+    text-align: center;
+    background-color: #87ceeb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    background-color: #87ceeb;
+    font-weight: bold;
+    color: #eee;
+    margin-right: 2rem;
+}
+
+
+/* Affirmations */
+#affirmations {
+    height: 9rem;
+    width: auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#affirmations h2{
+    color: #f0f8ff;
+    background-color: #87ceeb;
+    display: inline;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+#affirmation{
+    height: 4rem;
+    width: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: larger;
+    color: goldenrod;
+    text-shadow: 0 2px 4px #ccc;
+}
+
+
+/* Mood-Logger*/
+
+.moodLogger{
+    height: 100vh;
+    width: auto;
+    border: 1px solid #ccc;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: larger;
+}
+
+label{
+    color: #87ceeb;
+}
+
+#mood-options {
+    width: 8rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 2px solid #999;
+}
+
+
+#text-box{
+    height: 70vh;
+    width: 80vw;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+button{
+    height: 4rem;
+    width: 8rem;
+    border: 2px solid #999;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+#submit-btn{
+    color: #eee;
+    background-color: #87ceeb;
+}
+
+button:hover , #mood-options:hover ,#text-box:hover{
+    border: 1px solid #87ceeb;
+    box-shadow: 0 4px 8px #333;
+}
+
+#pastLogs {
+    color: #87ceeb;
+}
+
+#past-logs {
+    color: #999;
+};
+
+ul{
+    list-style-type: none;
+}
+
+li{
+   color: #87ceeb;
+}
+
+
+/*Breathing Excercise */
+
+#breathing{
+    height: 60vh;
+    width: auto;
+    border: 1px solid #87ceeb;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+#breathing h2 {
+    color: #f0f8ff;
+    font-weight: bold;
+    background-color: #87ceeb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border : 1px solid #999;
+}
+
+#timer ,#instruction{
+    background-color: #f0f8ff;
+    color: red;
+}
+
+
+#circle {
+    width: 100px;
+    height: 100px;
+    background-color: #87ceeb;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: none;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px #999;
+    margin-bottom: 5rem;
+}
+
+#startBreathing{
+    height: 3rem;
+    width: 10rem;
+    background-color: #f0f8ff;
+    border: 1px solid #999;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+#startBreathing:hover {
+    color: #333;
+    box-shadow: 0 4px 8px #333;
+    border: 2px solid #eee;
+}
+
+
+@keyframes breathe {
+    0%,  100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+
+/*Footer*/
+
+footer{
+    height: 4rem;
+    width: auto;
+    background-color: #87ceeb;
+    color: #f0f8ff;
+    padding-left: 0.5rem;
+}
+
+footer p{
+    background-color: #87ceeb;
+    color: #f0f8ff;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: x-small;
+    text-shadow: 0 2px 4px #999;
+}
